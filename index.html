@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shoopt - Smart Price Tracking App</title>
 <meta name="description" content="Shoopt helps you track product prices, compare deals, and save money. Download free on Google Play!">
+  <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="images/shoopt-favicon.png" type="image/png">
 </head>
 <body>
@@ -16,7 +20,11 @@
       <img src="images/shoopt-logo.png" alt="Shoopt Logo">
       <span>Shoopt</span>
     </a>
-    <nav class="nav">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="menu-toggle" aria-hidden="false">
+      <span class="hamburger"></span>
+    </label>
+    <nav class="nav" aria-label="Primary">
       <a href="#features">Features</a>
       <a href="#how-it-works">How It Works</a>
       <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank">Download</a>
@@ -135,14 +143,21 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container text-center">
-    <img src="images/shoopt-logo.png" alt="Shoopt Logo" class="footer-logo">
-    <p>The smart way to track prices and save money. Start smarter shopping today.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-outline">Download on Google Play</a>
-    <p>© 2025 Shoopt. All rights reserved.</p>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <img src="images/shoopt-logo.png" alt="Shoopt Logo" class="footer-logo">
+        <p class="footer-tagline">The smart way to track prices and save money.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>Start smarter shopping today.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-outline">Download on Google Play</a>
+        <p class="copyright">© 2025 Shoopt. All rights reserved.</p>
+      </div>
+    </div>
   </div>
 </footer>
-
+</footer>
 </body>
 </html>
 
