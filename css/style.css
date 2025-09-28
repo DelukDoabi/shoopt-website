@@ -139,6 +139,65 @@ body { padding-top: 72px; }
   font-size: 1.125rem; /* slightly smaller than before */
 }
 
+/* Language switcher - CSS-only using <details> */
+.lang-switcher {
+  position: relative;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+.lang-switcher summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 9999px;
+  background: transparent;
+  border: 1px solid transparent;
+}
+.lang-switcher summary:focus {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
+.lang-switcher summary::-webkit-details-marker { display: none; }
+.lang-summary { display: inline-flex; align-items: center; gap: 0.5rem; }
+.lang-code { font-size: 0.8rem; opacity: 0.8; padding-left: 0.25rem; }
+.lang-list {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  list-style: none;
+  padding: 0.4rem 0.25rem;
+  min-width: 160px;
+  z-index: 1500;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.lang-list li { padding: 0; }
+.lang-list li a {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  color: var(--wenge);
+  border-radius: 0.45rem;
+}
+.lang-list li a:hover, .lang-list li a:focus { background: linear-gradient(90deg, rgba(245,158,11,0.08), rgba(251,146,60,0.06)); color: var(--amber); }
+
+/* Hide the menu by default via details behavior; ensure it stays above header shadow */
+.lang-switcher[open] .lang-list { display: block; }
+.lang-switcher .lang-list { display: none; }
+
+/* On small screens, place language switcher as a full-width item inside the stacked header */
+@media (max-width: 768px) {
+  .lang-switcher { margin-left: 0; }
+  .site-header .container { align-items: center; }
+  .lang-switcher summary { width: 100%; justify-content: space-between; }
+  .lang-switcher[open] .lang-list { position: static; width: 100%; box-shadow: none; border: none; background: transparent; padding: 0.25rem 0; }
+  .lang-list li a { padding-left: 0; padding-right: 0; }
+}
+
 .nav {
   display: flex;
   align-items: center;
