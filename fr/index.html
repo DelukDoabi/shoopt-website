@@ -1,60 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shoopt - Suivez et mémorisez vos prix</title>
-  <meta name="description" content="Shoopt vous aide à suivre les prix de vos produits quotidiens et à faire vos courses plus intelligemment. Disponible sur Google Play.">
-  <meta name="keywords" content="shoopt, application shopping, suivi prix, courses, tracker prix, économiser argent, achats intelligents">
-  <meta name="author" content="Équipe Shoopt">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Shoopt - Suivez et mémorisez vos prix">
-  <meta property="og:description" content="Enregistrez et suivez les prix de vos produits favoris avec Shoopt. Disponible sur Google Play.">
-  <meta property="og:image" content="https://delukdoabi.github.io/shoopt-website/images/shoopt-logo.png">
-  <meta property="og:url" content="https://delukdoabi.github.io/shoopt-website/fr/">
-  <meta property="og:type" content="website">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="../css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoopt - Application intelligente de suivi des prix</title>
+<meta name="description" content="Shoopt vous aide à suivre les prix des produits, comparer les offres et économiser de l'argent. Téléchargement gratuit sur Google Play !">
+  <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="../images/shoopt-favicon.png" type="image/png">
+<!-- Open Graph -->
+<meta property="og:title" content="Shoopt - Application intelligente de suivi des prix">
+<meta property="og:description" content="Enregistrez et suivez les prix de vos produits favoris avec Shoopt. Disponible sur Google Play.">
+<meta property="og:image" content="../images/shoopt-logo.png">
+<meta property="og:url" content="/fr/">
+<meta property="og:type" content="website">
 </head>
 <body>
-  <!-- Shoopt -->
-  <header>
-    <h1>Shoopt</h1>
-    <p>Suivez, mémorisez et comparez les prix de vos produits quotidiens. Faites vos courses plus intelligemment !</p>
-    <div class="cta">
-      <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank">
-        📲 Obtenez Shoopt sur Google Play
-      </a>
-    </div>
-  </header>
 
-  <!-- Features Section -->
-  <section>
-    <h2>Pourquoi Shoopt ?</h2>
-    <p>Shoopt rend vos courses faciles. Enregistrez les produits que vous achetez quotidiennement, suivez leurs prix et prenez des décisions plus intelligentes.</p>
-    <div class="features">
-      <div class="feature-card">
-        <h3>📦 Enregistrez les produits</h3>
-        <p>Ajoutez rapidement des produits à votre liste et ne les oubliez jamais.</p>
+<header class="site-header">
+  <div class="container">
+  <a href="index.html" class="logo">
+      <img src="../images/shoopt-logo.png" alt="Logo Shoopt">
+      <span>Shoopt</span>
+    </a>
+    <input type="checkbox" id="nav-toggle-fr" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle-fr" class="menu-toggle" aria-hidden="false">
+      <span class="hamburger"></span>
+    </label>
+    <nav class="nav" aria-label="Primary">
+  <a href="#features">Fonctionnalités</a>
+  <a href="#how-it-works">Comment ça marche</a>
+      <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank">Télécharger</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+    </div>
+    <div class="container hero-content">
+      <span class="badge">Nouveau lancement — Disponible maintenant !</span>
+      <h1>Suivez les prix.<span> Économisez.</span></h1>
+      <p>La manière la plus élégante de suivre les prix des produits, comparer les offres et prendre de meilleures décisions d'achat. Soyez parmi les premiers à découvrir Shoopt.</p>
+      <div class="hero-buttons">
+        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-primary">Télécharger Gratuitement</a>
+        <a href="#features" class="btn-secondary">En savoir plus</a>
       </div>
-      <div class="feature-card">
-        <h3>💰 Suivez les prix</h3>
-        <p>Enregistrez les prix dans le temps et repérez les variations instantanément.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🔍 Comparez et décidez</h3>
-        <p>Analysez vos dépenses et achetez plus intelligemment grâce à des insights clairs.</p>
+      <div class="hero-benefits">
+        <div>
+          <span class="icon">✨</span>
+          <h4>Tout neuf</h4>
+          <p>Lancement récent avec des fonctionnalités de pointe</p>
+        </div>
+        <div>
+          <span class="icon">⬇️</span>
+          <h4>100% Gratuit</h4>
+          <p>Sans publicités, sans abonnements, sans frais cachés</p>
+        </div>
+        <div>
+          <span class="icon">🛡️</span>
+          <h4>Respect de la vie privée</h4>
+          <p>Vos données restent sur votre appareil</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Shoopt. Tous droits réservés.</p>
-    <p><a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt">Téléchargez sur Google Play</a></p>
-  </footer>
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container text-center">
+      <h2>Tout ce dont vous avez besoin pour faire des achats <span>plus intelligents</span></h2>
+      <p>Shoopt combine un suivi des prix puissant avec un design élégant pour créer le compagnon d'achat ultime.</p>
+      <div class="feature-cards">
+        <div class="card">
+          <span class="icon">📦</span>
+          <h3>Bibliothèque de produits intelligente</h3>
+          <p>Créez votre catalogue personnel de produits favoris avec une catégorisation intelligente et une recherche instantanée.</p>
+        </div>
+        <div class="card">
+          <span class="icon">💲</span>
+          <h3>Suivi de l'historique des prix</h3>
+          <p>Surveillez les fluctuations de prix dans le temps avec de beaux graphiques et recevez des alertes lorsque les prix baissent.</p>
+        </div>
+        <div class="card">
+          <span class="icon">📊</span>
+          <h3>Analytique d'achat</h3>
+          <p>Comprenez vos habitudes de dépense avec des insights détaillés et prenez des décisions d'achat basées sur les données.</p>
+        </div>
+        <div class="card">
+          <span class="icon">🔍</span>
+          <h3>Comparaison de prix rapide</h3>
+          <p>Comparez les prix entre différents magasins et moments pour trouver les meilleures offres sans effort.</p>
+        </div>
+        <div class="card">
+          <span class="icon">🛡️</span>
+          <h3>Sécurisé & Privé</h3>
+          <p>Vos données d'achat sont chiffrées et stockées en toute sécurité. Confidentialité garantie.</p>
+        </div>
+        <div class="card">
+          <span class="icon">⚡</span>
+          <h3>Ultra-rapide</h3>
+          <p>Ajoutez des produits et suivez les prix en quelques secondes grâce à notre interface épurée et intuitive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container text-center">
+      <h2>Commencez à économiser en <span>3 étapes</span></h2>
+      <div class="steps">
+        <div>
+          <span class="icon">🛒</span>
+          <h3>Ajoutez des produits</h3>
+          <p>Ajoutez rapidement les produits que vous achetez régulièrement avec notre recherche intelligente et le scanner de codes-barres.</p>
+        </div>
+        <div>
+          <span class="icon">📉</span>
+          <h3>Suivez les prix</h3>
+          <p>Enregistrez les prix chaque fois que vous faites vos courses et laissez Shoopt construire votre historique personnel des prix.</p>
+        </div>
+        <div>
+          <span class="icon">📊</span>
+          <h3>Prenez des décisions intelligentes</h3>
+          <p>Recevez des insights, des alertes et des recommandations pour économiser sur chaque achat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Section -->
+  <section id="download" class="cta">
+    <div class="container text-center">
+      <h2>Prêt à commencer à économiser ?</h2>
+      <p>Soyez parmi les premiers à découvrir Shoopt - la manière la plus intelligente de suivre les prix et d'acheter mieux.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-primary">Obtenir Shoopt gratuitement</a>
+      <p class="launch-note">🚀 Nouveau lancement : aidez-nous à l'améliorer en partageant vos retours !</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <img src="../images/shoopt-logo.png" alt="Shoopt Logo" class="footer-logo">
+        <p class="footer-tagline">La manière intelligente de suivre les prix et d'économiser de l'argent.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>Commencez à faire des achats plus intelligents dès aujourd'hui.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-outline">Télécharger sur Google Play</a>
+        <p class="copyright">© 2025 Shoopt. Tous droits réservés.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
 
