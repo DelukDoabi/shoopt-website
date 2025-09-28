@@ -2,7 +2,7 @@
 
 Welcome to the official landing page repository for **Shoopt**, the smart shopping app that helps users track and remember the prices of their daily products.
 
-[📲 Get Shoopt on Google Play](https://play.google.com/store/apps/details?id=com.yourpackage.shoopt)
+[📲 Get Shoopt on Google Play](https://play.google.com/store/apps/details?id=com.dedoware.shoopt)
 
 ---
 
@@ -32,8 +32,8 @@ This repository contains only the **website for Shoopt**. The mobile application
 
 The website is hosted via GitHub Pages:
 
-- English: [https://yourusername.github.io/shoopt-website/](https://yourusername.github.io/shoopt-website/)  
-- French: [https://yourusername.github.io/shoopt-website/fr/](https://yourusername.github.io/shoopt-website/fr/)
+- English: [https://delukdoabi.github.io/shoopt-website/](https://delukdoabi.github.io/shoopt-website/)  
+- French: [https://delukdoabi.github.io/shoopt-website/fr/](https://delukdoabi.github.io/shoopt-website/fr/)
 
 ---
 
