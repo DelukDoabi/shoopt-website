@@ -199,11 +199,23 @@ img {
 
 /* On small screens, place language switcher as a full-width item inside the stacked header */
 @media (max-width: 768px) {
-  .lang-switcher { margin-left: 0; }
-  .site-header .container { align-items: center; }
-  .lang-switcher summary { width: 100%; justify-content: space-between; }
+  /* Compact header: keep logo, language switcher and burger on one row */
+  .site-header .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .logo span { display: none; } /* hide logo text to save horizontal space */
+  .lang-switcher { margin-left: 0; margin-right: 0.5rem; height: auto; }
+  .lang-switcher summary { width: auto; justify-content: center; padding: 0.15rem 0.5rem; font-size: 0.9rem; }
+  .lang-switcher .lang-code { display: none; }
   .lang-switcher[open] .lang-list { position: static; width: 100%; box-shadow: none; border: none; background: transparent; padding: 0.25rem 0; }
   .lang-list li a { padding-left: 0; padding-right: 0; }
+
+  /* Slightly smaller hamburger to match compact layout */
+  .menu-toggle { padding: 0.35rem; }
+  .menu-toggle .hamburger { width: 20px; }
 }
 
 /* RTL support: flip margins and dropdown placement when page is RTL */
