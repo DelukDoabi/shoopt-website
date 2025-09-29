@@ -522,11 +522,13 @@ img {
   }
 
   /* On small screens stack the header container so logo and nav don't squeeze */
-  .site-header .container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
+    /* Keep header items in a row on mobile for proper alignment */
+    .site-header .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
   .hero-buttons {
     flex-direction: column;
   }
