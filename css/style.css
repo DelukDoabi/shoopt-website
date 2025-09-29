@@ -146,10 +146,6 @@ img {
   position: relative;
   margin-left: 1rem;
   font-size: 0.95rem;
-  display: inline-flex;
-  align-items: center; /* vertical center inside header */
-  height: 72px; /* match header height so it aligns vertically */
-  align-self: center; /* ensure it centers inside flex container */
 }
 .lang-switcher summary {
   list-style: none;
@@ -157,12 +153,10 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.25rem 0.6rem;
+  padding: 0.35rem 0.6rem;
   border-radius: 9999px;
   background: transparent;
   border: 1px solid transparent;
-  height: 44px; /* match logo max-height for balanced visual */
-  line-height: 1; /* ensure centering */
 }
 .lang-switcher summary:focus {
   outline: 2px solid var(--amber);
@@ -217,13 +211,6 @@ img {
   .menu-toggle { padding: 0.35rem; }
   .menu-toggle .hamburger { width: 20px; }
 }
-
-/* RTL support: flip margins and dropdown placement when page is RTL */
-html[dir="rtl"] .lang-switcher { margin-left: 0; margin-right: 0.75rem; }
-html[dir="rtl"] .lang-switcher .lang-list { left: 0; right: auto; }
-/* micro-adjust: nudge the summary slightly to visually align with logo text metrics */
-html[dir="rtl"] .lang-switcher summary { transform: translateY(2px); }
-html:not([dir="rtl"]) .lang-switcher summary { transform: translateY(0); }
 
 .nav {
   display: flex;
