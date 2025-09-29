@@ -57,7 +57,7 @@ img {
   z-index: 1000;
   padding: 0; /* container handles spacing */
   transition: background 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  height: 72px; /* fixed visual header height */
+  min-height: 72px; /* desktop visual header height, allow expansion on small screens */
   background: rgba(255,255,255,0.98); /* keep opaque so it doesn't mix with page content */
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   backdrop-filter: blur(6px);
@@ -66,8 +66,10 @@ img {
 /* Header height is dynamic; JS will set body padding to avoid overlap */
 /* Keep header padding for natural spacing */
 
-/* Reserve space so content doesn't hide under fixed header (CSS-only) */
-body { padding-top: 72px; }
+/* Reserve space so content doesn't hide under fixed header on desktop only */
+@media (min-width: 769px) {
+  body { padding-top: 72px; }
+}
 /* Menu toggle (hamburger) styling */
 .menu-toggle {
   display: none; /* shown on small screens */
@@ -506,6 +508,9 @@ html:not([dir="rtl"]) .lang-switcher summary { transform: translateY(0); }
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* make header occupy flow on small screens to avoid content overlap */
+  .site-header { position: sticky; top: 0; }
+  .lang-switcher { height: auto; }
   .hero-content h1 {
     font-size: 2.2rem;
   }
