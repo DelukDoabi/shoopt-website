@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shoopt - App intelligente per il monitoraggio dei prezzi</title>
 <meta name="description" content="Shoopt ti aiuta a monitorare i prezzi dei prodotti, confrontare offerte e risparmiare. Scarica gratuitamente su Google Play!">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f59e0b">
 <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +20,10 @@
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header" role="banner">
   <div class="container">
     <a href="index.html" class="logo">
-      <img src="../images/shoopt-logo.png" alt="Shoopt Logo">
+      <img src="../images/shoopt-logo.png" alt="Shoopt Logo" width="44" height="44">
       <span>Shoopt</span>
     </a>
     <!-- Language switcher (current: Italiano) -->
@@ -44,13 +44,13 @@
       </ul>
     </details>
     <input type="checkbox" id="nav-toggle-it" class="nav-toggle" aria-hidden="true">
-    <label for="nav-toggle-it" class="menu-toggle" aria-hidden="false">
+    <label for="nav-toggle-it" class="menu-toggle" aria-label="Toggle navigation menu" role="button" tabindex="0">
       <span class="hamburger"></span>
     </label>
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" aria-label="Navigation principale">
       <a href="#features">Caratteristiche</a>
       <a href="#how-it-works">Come funziona</a>
-      <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank">Scarica</a>
+      <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer">Scarica</a>
     </nav>
   </div>
 </header>
@@ -58,31 +58,31 @@
 <main>
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-bg">
+    <div class="hero-bg" aria-hidden="true">
       <div class="circle circle1"></div>
       <div class="circle circle2"></div>
     </div>
     <div class="container hero-content">
-      <span class="badge">Nuovo lancio — Ora disponibile!</span>
-      <h1>Monitora i prezzi.<span> Risparmia.</span></h1>
-      <p>Il modo più elegante per monitorare i prezzi dei prodotti, confrontare le offerte e prendere decisioni d'acquisto più intelligenti. Sii tra i primi a provare Shoopt.</p>
-      <div class="hero-buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-primary">Scarica gratis</a>
+      <span class="badge fade-in-up" data-delay="0">Nuovo lancio — Ora disponibile!</span>
+      <h1 id="hero-title" class="fade-in-up" data-delay="100">Monitora i prezzi.<span> Risparmia.</span></h1>
+      <p class="fade-in-up" data-delay="200">Il modo più elegante per monitorare i prezzi dei prodotti, confrontare le offerte e prendere decisioni d'acquisto più intelligenti. Sii tra i primi a provare Shoopt.</p>
+      <div class="hero-buttons fade-in-up" data-delay="300">
+        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer" class="btn-primary">Scarica gratis</a>
         <a href="#features" class="btn-secondary">Scopri di più</a>
       </div>
       <div class="hero-benefits">
         <div>
-          <span class="icon">✨</span>
+          <span class="icon">aria-hidden="true">✨</span>
           <h4>Nuovissimo</h4>
           <p>Lancio con funzionalità all'avanguardia</p>
         </div>
         <div>
-          <span class="icon">⬇️</span>
+          <span class="icon">aria-hidden="true">⬇️</span>
           <h4>100% gratuito</h4>
           <p>Niente pubblicità, niente abbonamenti, nessun costo nascosto</p>
         </div>
         <div>
-          <span class="icon">🛡️</span>
+          <span class="icon">aria-hidden="true">🛡️</span>
           <h4>Privacy al primo posto</h4>
           <p>I tuoi dati restano sul tuo dispositivo</p>
         </div>
@@ -93,36 +93,36 @@
   <!-- Features Section -->
   <section id="features" class="features">
     <div class="container text-center">
-      <h2>Tutto ciò di cui hai bisogno per fare <span>acquisti più intelligenti</span></h2>
+      <h2 id="features-title" class="scroll-reveal">Tutto ciò di cui hai bisogno per fare <span>acquisti più intelligenti</span></h2>
       <p>Shoopt combina un potente monitoraggio dei prezzi con un design elegante per creare il compagno di shopping ideale.</p>
       <div class="feature-cards">
         <div class="card">
-          <span class="icon">📦</span>
+          <span class="icon">aria-hidden="true">📦</span>
           <h3>Archivio prodotti intelligente</h3>
           <p>Costruisci il tuo catalogo personale di prodotti preferiti con categorizzazione intelligente e ricerca istantanea.</p>
         </div>
         <div class="card">
-          <span class="icon">💲</span>
+          <span class="icon">aria-hidden="true">💲</span>
           <h3>Tracciamento cronologia prezzi</h3>
           <p>Monitora le fluttuazioni dei prezzi nel tempo con grafici chiari e ricevi avvisi quando i prezzi scendono.</p>
         </div>
         <div class="card">
-          <span class="icon">📊</span>
+          <span class="icon">aria-hidden="true">📊</span>
           <h3>Analisi degli acquisti</h3>
           <p>Comprendi i tuoi modelli di spesa con approfondimenti dettagliati e prendi decisioni d'acquisto basate sui dati.</p>
         </div>
         <div class="card">
-          <span class="icon">🔍</span>
+          <span class="icon">aria-hidden="true">🔍</span>
           <h3>Confronto prezzi rapido</h3>
           <p>Confronta i prezzi tra diversi negozi e momenti per trovare facilmente le migliori offerte.</p>
         </div>
         <div class="card">
-          <span class="icon">🛡️</span>
+          <span class="icon">aria-hidden="true">🛡️</span>
           <h3>Sicuro & Privato</h3>
           <p>I tuoi dati di acquisto sono crittografati e archiviati in modo sicuro. Privacy garantita.</p>
         </div>
         <div class="card">
-          <span class="icon">⚡</span>
+          <span class="icon">aria-hidden="true">⚡</span>
           <h3>Estremamente veloce</h3>
           <p>Aggiungi prodotti e monitora i prezzi in pochi secondi con la nostra interfaccia intuitiva.</p>
         </div>
@@ -133,20 +133,20 @@
   <!-- How It Works Section -->
   <section id="how-it-works" class="how-it-works">
     <div class="container text-center">
-      <h2>Inizia a risparmiare in <span>3 passi</span></h2>
+      <h2 id="how-it-works-title" class="scroll-reveal">Inizia a risparmiare in <span>3 passi</span></h2>
       <div class="steps">
         <div>
-          <span class="icon">🛒</span>
+          <span class="icon">aria-hidden="true">🛒</span>
           <h3>Aggiungi prodotti</h3>
           <p>Aggiungi rapidamente i prodotti che acquisti regolarmente con la nostra ricerca intelligente e lo scanner di codici a barre.</p>
         </div>
         <div>
-          <span class="icon">📉</span>
+          <span class="icon">aria-hidden="true">📉</span>
           <h3>Monitora i prezzi</h3>
           <p>Registra i prezzi ogni volta che fai acquisti e lascia che Shoopt crei la tua cronologia personale dei prezzi.</p>
         </div>
         <div>
-          <span class="icon">📊</span>
+          <span class="icon">aria-hidden="true">📊</span>
           <h3>Prendi decisioni intelligenti</h3>
           <p>Ricevi approfondimenti, avvisi e raccomandazioni per risparmiare su ogni acquisto.</p>
         </div>
@@ -157,28 +157,129 @@
   <!-- Download CTA Section -->
   <section id="download" class="cta">
     <div class="container text-center">
-      <h2>Pronto a iniziare a risparmiare?</h2>
+      <h2 id="cta-title" class="scroll-reveal">Pronto a iniziare a risparmiare?</h2>
       <p>Sii tra i primi a provare Shoopt — il modo più intelligente per monitorare i prezzi e fare acquisti migliori.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-primary">Ottieni Shoopt gratis</a>
+      <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer" class="btn-primary">Ottieni Shoopt gratis</a>
       <p class="launch-note">🚀 Nuovo lancio: aiutaci a migliorare condividendo il tuo feedback!</p>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-inner">
       <div class="footer-top">
-        <img src="../images/shoopt-logo.png" alt="Shoopt Logo" class="footer-logo">
+        <img src="../images/shoopt-logo.png" alt="Shoopt Logo" class="footer-logo" width="44" height="44" width="80" height="80">
         <p class="footer-tagline">Il modo intelligente per monitorare i prezzi e risparmiare.</p>
       </div>
       <div class="footer-bottom">
         <p>Inizia a fare acquisti più intelligenti oggi stesso.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-outline">Scarica su Google Play</a>
+        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer" class="btn-outline">Scarica su Google Play</a>
         <p class="copyright">© 2025 Shoopt. Tutti i diritti riservati.</p>
       </div>
     </div>
   </div>
 </footer>
+<script>
+// Intersection Observer for scroll animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, delay);
+      scrollObserver.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.scroll-reveal, .fade-in-up');
+  animatedElements.forEach(el => scrollObserver.observe(el));
+
+  const header = document.querySelector('.site-header');
+  let lastScroll = 0;
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    lastScroll = currentScroll;
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href !== '#' && href !== '') {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const headerHeight = header.offsetHeight;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+          const navToggle = document.querySelector('.nav-toggle');
+          if (navToggle && navToggle.checked) { navToggle.checked = false; }
+        }
+      }
+    });
+  });
+
+  const menuToggle = document.querySelector('.menu-toggle');
+  if (menuToggle) {
+    menuToggle.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const navToggle = document.querySelector('.nav-toggle');
+        navToggle.checked = !navToggle.checked;
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    const navToggle = document.querySelector('.nav-toggle');
+    if (e.key === 'Escape' && navToggle && navToggle.checked) {
+      navToggle.checked = false;
+    }
+  });
+
+  const heroSection = document.querySelector('.hero');
+  const heroCircles = document.querySelectorAll('.hero-bg .circle');
+  if (heroSection && window.innerWidth > 768) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const heroHeight = heroSection.offsetHeight;
+      if (scrolled < heroHeight) {
+        heroCircles.forEach((circle, index) => {
+          const speed = 0.3 + (index * 0.1);
+          circle.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+      }
+    });
+  }
+
+  document.querySelectorAll('img').forEach(img => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+  });
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    document.documentElement.style.setProperty('scroll-behavior', 'auto');
+    document.querySelectorAll('.scroll-reveal, .fade-in-up').forEach(el => {
+      el.classList.add('visible');
+    });
+  }
+});
+</script>
 </body>
 </html>
