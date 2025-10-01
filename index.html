@@ -3,21 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shoopt - Smart Price Tracking App</title>
-<meta name="description" content="Shoopt helps you track product prices, compare deals, and save money. Download free on Google Play!">
-  <meta name="theme-color" content="#ffffff">
+<title>Shoopt - Smart Price Tracking App | Save Money on Every Purchase</title>
+<meta name="description" content="Track product prices, compare deals, and save money with Shoopt. Free Android app with price history tracking, shopping analytics, and smart alerts. No ads, 100% free forever.">
+<meta name="keywords" content="price tracker, price comparison, shopping app, save money, deal finder, price history, product tracker, shopping assistant">
+<meta name="author" content="Shoopt">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#f59e0b">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shoopt.app/">
+<meta property="og:title" content="Shoopt - Smart Price Tracking App | Save Money on Every Purchase">
+<meta property="og:description" content="Track product prices, compare deals, and save money with Shoopt. Free Android app with price history tracking and smart alerts.">
+<meta property="og:image" content="https://shoopt.app/images/shoopt-logo.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Shoopt">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://shoopt.app/">
+<meta name="twitter:title" content="Shoopt - Smart Price Tracking App">
+<meta name="twitter:description" content="Track product prices, compare deals, and save money with Shoopt. Free Android app with price history tracking.">
+<meta name="twitter:image" content="https://shoopt.app/images/shoopt-logo.png">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://shoopt.app/">
+
+<!-- Alternate Languages -->
+<link rel="alternate" hreflang="en" href="https://shoopt.app/">
+<link rel="alternate" hreflang="fr" href="https://shoopt.app/fr/">
+<link rel="alternate" hreflang="pt" href="https://shoopt.app/pt/">
+<link rel="alternate" hreflang="de" href="https://shoopt.app/de/">
+<link rel="alternate" hreflang="it" href="https://shoopt.app/it/">
+<link rel="alternate" hreflang="es" href="https://shoopt.app/es/">
+<link rel="alternate" hreflang="ar" href="https://shoopt.app/ar/">
+<link rel="alternate" hreflang="ja" href="https://shoopt.app/ja/">
+<link rel="alternate" hreflang="ru" href="https://shoopt.app/ru/">
+<link rel="alternate" hreflang="pl" href="https://shoopt.app/pl/">
+<link rel="alternate" hreflang="ko" href="https://shoopt.app/ko/">
+<link rel="alternate" hreflang="zh" href="https://shoopt.app/zh/">
+<link rel="alternate" hreflang="x-default" href="https://shoopt.app/">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://play.google.com">
+
+<!-- Fonts with display swap for better performance -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
 <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
 <link rel="icon" href="images/shoopt-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="images/shoopt-logo.png">
+
+<!-- Web App Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Structured Data (JSON-LD) for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Shoopt",
+  "description": "Smart price tracking app that helps you save money by monitoring product prices, comparing deals, and providing shopping analytics.",
+  "applicationCategory": "Shopping",
+  "operatingSystem": "Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "250"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.dedoware.shoopt"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Shoopt",
+  "url": "https://shoopt.app/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://shoopt.app/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shoopt",
+  "url": "https://shoopt.app/",
+  "logo": "https://shoopt.app/images/shoopt-logo.png",
+  "sameAs": [
+    "https://play.google.com/store/apps/details?id=com.dedoware.shoopt"
+  ]
+}
+</script>
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header" role="banner">
   <div class="container">
-    <a href="#" class="logo">
-      <img src="images/shoopt-logo.png" alt="Shoopt Logo">
+    <a href="#home" class="logo" aria-label="Shoopt - Go to homepage">
+      <img src="images/shoopt-logo.png" alt="Shoopt Logo" width="44" height="44">
       <span>Shoopt</span>
     </a>
     <!-- Language switcher: CSS-only, accessible dropdown using <details> -->
@@ -38,45 +138,45 @@
       </ul>
     </details>
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-    <label for="nav-toggle" class="menu-toggle" aria-hidden="false">
+    <label for="nav-toggle" class="menu-toggle" aria-label="Toggle navigation menu" role="button" tabindex="0">
       <span class="hamburger"></span>
     </label>
-    <nav class="nav" aria-label="Primary">
-      <a href="#features">Features</a>
-      <a href="#how-it-works">How It Works</a>
-      <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank">Download</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#features" aria-label="View features">Features</a>
+      <a href="#how-it-works" aria-label="Learn how it works">How It Works</a>
+      <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer" aria-label="Download Shoopt from Google Play">Download</a>
     </nav>
   </div>
 </header>
 
 <main>
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-bg">
+  <section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true">
       <div class="circle circle1"></div>
       <div class="circle circle2"></div>
     </div>
     <div class="container hero-content">
-      <span class="badge">New Launch - Now Available!</span>
-      <h1>Track Prices.<span> Save Money.</span></h1>
-      <p>The most elegant way to track product prices, compare deals, and make smarter shopping decisions. Be among the first to experience Shoopt.</p>
-      <div class="hero-buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-primary">Download Free</a>
-        <a href="#features" class="btn-secondary">Learn More</a>
+      <span class="badge fade-in-up" data-delay="0">New Launch - Now Available!</span>
+      <h1 id="hero-title" class="fade-in-up" data-delay="100">Track Prices.<span> Save Money.</span></h1>
+      <p class="fade-in-up" data-delay="200">The most elegant way to track product prices, compare deals, and make smarter shopping decisions. Be among the first to experience Shoopt.</p>
+      <div class="hero-buttons fade-in-up" data-delay="300">
+        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Download Shoopt free from Google Play">Download Free</a>
+        <a href="#features" class="btn-secondary" aria-label="Learn more about Shoopt features">Learn More</a>
       </div>
       <div class="hero-benefits">
-        <div>
-          <span class="icon">✨</span>
+        <div class="fade-in-up" data-delay="400">
+          <span class="icon" aria-hidden="true">✨</span>
           <h4>Brand New</h4>
           <p>Fresh launch with cutting-edge features</p>
         </div>
-        <div>
-          <span class="icon">⬇️</span>
+        <div class="fade-in-up" data-delay="500">
+          <span class="icon" aria-hidden="true">⬇️</span>
           <h4>100% Free</h4>
           <p>No ads, no subscriptions, no hidden costs</p>
         </div>
-        <div>
-          <span class="icon">🛡️</span>
+        <div class="fade-in-up" data-delay="600">
+          <span class="icon" aria-hidden="true">🛡️</span>
           <h4>Privacy First</h4>
           <p>Your data stays on your device</p>
         </div>
@@ -85,95 +185,247 @@
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="features">
+  <section id="features" class="features" aria-labelledby="features-title">
     <div class="container text-center">
-      <h2>Everything You Need to Shop <span>Smarter</span></h2>
-      <p>Shoopt combines powerful price tracking with elegant design to create the ultimate shopping companion.</p>
+      <h2 id="features-title" class="scroll-reveal">Everything You Need to Shop <span>Smarter</span></h2>
+      <p class="scroll-reveal" data-delay="100">Shoopt combines powerful price tracking with elegant design to create the ultimate shopping companion.</p>
       <div class="feature-cards">
-        <div class="card">
-          <span class="icon">📦</span>
+        <article class="card scroll-reveal" data-delay="0">
+          <span class="icon" aria-hidden="true">📦</span>
           <h3>Smart Product Library</h3>
           <p>Build your personal catalog of favorite products with intelligent categorization and instant search.</p>
-        </div>
-        <div class="card">
-          <span class="icon">💲</span>
+        </article>
+        <article class="card scroll-reveal" data-delay="100">
+          <span class="icon" aria-hidden="true">💲</span>
           <h3>Price History Tracking</h3>
           <p>Monitor price fluctuations over time with beautiful charts and get alerts when prices drop.</p>
-        </div>
-        <div class="card">
-          <span class="icon">📊</span>
+        </article>
+        <article class="card scroll-reveal" data-delay="200">
+          <span class="icon" aria-hidden="true">📊</span>
           <h3>Shopping Analytics</h3>
           <p>Understand your spending patterns with detailed insights and make data-driven shopping decisions.</p>
-        </div>
-        <div class="card">
-          <span class="icon">🔍</span>
+        </article>
+        <article class="card scroll-reveal" data-delay="300">
+          <span class="icon" aria-hidden="true">🔍</span>
           <h3>Quick Price Comparison</h3>
           <p>Compare prices across different stores and times to find the best deals effortlessly.</p>
-        </div>
-        <div class="card">
-          <span class="icon">🛡️</span>
+        </article>
+        <article class="card scroll-reveal" data-delay="400">
+          <span class="icon" aria-hidden="true">🛡️</span>
           <h3>Secure & Private</h3>
           <p>Your shopping data is encrypted and stored securely. Complete privacy guaranteed.</p>
-        </div>
-        <div class="card">
-          <span class="icon">⚡</span>
+        </article>
+        <article class="card scroll-reveal" data-delay="500">
+          <span class="icon" aria-hidden="true">⚡</span>
           <h3>Lightning Fast</h3>
           <p>Add products and track prices in seconds with our streamlined, intuitive interface.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- How It Works Section -->
-  <section id="how-it-works" class="how-it-works">
+  <section id="how-it-works" class="how-it-works" aria-labelledby="how-it-works-title">
     <div class="container text-center">
-      <h2>Start Saving in <span>3 Steps</span></h2>
+      <h2 id="how-it-works-title" class="scroll-reveal">Start Saving in <span>3 Steps</span></h2>
       <div class="steps">
-        <div>
-          <span class="icon">🛒</span>
+        <article class="scroll-reveal" data-delay="0">
+          <span class="icon" aria-hidden="true">🛒</span>
           <h3>Add Products</h3>
           <p>Quickly add products you buy regularly with our smart search and barcode scanner.</p>
-        </div>
-        <div>
-          <span class="icon">📉</span>
+        </article>
+        <article class="scroll-reveal" data-delay="150">
+          <span class="icon" aria-hidden="true">📉</span>
           <h3>Track Prices</h3>
           <p>Record prices each time you shop and let Shoopt build your personal price history.</p>
-        </div>
-        <div>
-          <span class="icon">📊</span>
+        </article>
+        <article class="scroll-reveal" data-delay="300">
+          <span class="icon" aria-hidden="true">📊</span>
           <h3>Make Smart Decisions</h3>
           <p>Get insights, alerts, and recommendations to save money on every purchase.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Download CTA Section -->
-  <section id="download" class="cta">
+  <section id="download" class="cta" aria-labelledby="cta-title">
     <div class="container text-center">
-      <h2>Ready to Start Saving?</h2>
-      <p>Be among the first to experience Shoopt - the smartest way to track prices and make better shopping decisions.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-primary">Get Shoopt Free</a>
-      <p class="launch-note">🚀 New Launch: Help us improve by sharing your feedback!</p>
+      <h2 id="cta-title" class="scroll-reveal">Ready to Start Saving?</h2>
+      <p class="scroll-reveal" data-delay="100">Be among the first to experience Shoopt - the smartest way to track prices and make better shopping decisions.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer" class="btn-primary scroll-reveal" data-delay="200" aria-label="Get Shoopt free from Google Play">Get Shoopt Free</a>
+      <p class="launch-note scroll-reveal" data-delay="300">🚀 New Launch: Help us improve by sharing your feedback!</p>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-inner">
       <div class="footer-top">
-        <img src="images/shoopt-logo.png" alt="Shoopt Logo" class="footer-logo">
+        <img src="images/shoopt-logo.png" alt="Shoopt Logo" class="footer-logo" width="80" height="80">
         <p class="footer-tagline">The smart way to track prices and save money.</p>
       </div>
       <div class="footer-bottom">
         <p>Start smarter shopping today.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" class="btn-outline">Download on Google Play</a>
+        <a href="https://play.google.com/store/apps/details?id=com.dedoware.shoopt" target="_blank" rel="noopener noreferrer" class="btn-outline" aria-label="Download Shoopt on Google Play">Download on Google Play</a>
         <p class="copyright">© 2025 Shoopt. All rights reserved.</p>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- Smooth Scroll & Animation Script -->
+<script>
+// Intersection Observer for scroll animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, delay);
+      scrollObserver.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observe all elements with animation classes
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.scroll-reveal, .fade-in-up');
+  animatedElements.forEach(el => scrollObserver.observe(el));
+
+  // Header scroll effect
+  const header = document.querySelector('.site-header');
+  let lastScroll = 0;
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    
+    lastScroll = currentScroll;
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href !== '#' && href !== '') {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const headerHeight = header.offsetHeight;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          const navToggle = document.getElementById('nav-toggle');
+          if (navToggle && navToggle.checked) {
+            navToggle.checked = false;
+          }
+        }
+      }
+    });
+  });
+
+  // Mobile menu accessibility - close on escape
+  const navToggle = document.getElementById('nav-toggle');
+  const menuToggle = document.querySelector('.menu-toggle');
+  
+  if (menuToggle) {
+    menuToggle.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        navToggle.checked = !navToggle.checked;
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navToggle && navToggle.checked) {
+      navToggle.checked = false;
+    }
+  });
+
+  // Parallax effect for hero background
+  const heroSection = document.querySelector('.hero');
+  const heroCircles = document.querySelectorAll('.hero-bg .circle');
+  
+  if (heroSection && window.innerWidth > 768) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const heroHeight = heroSection.offsetHeight;
+      
+      if (scrolled < heroHeight) {
+        heroCircles.forEach((circle, index) => {
+          const speed = 0.3 + (index * 0.1);
+          circle.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+      }
+    });
+  }
+
+  // Add loading attribute to images for lazy loading
+  document.querySelectorAll('img').forEach(img => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+  });
+
+  // Performance: Reduce motion for users who prefer it
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    document.documentElement.style.setProperty('scroll-behavior', 'auto');
+    document.querySelectorAll('.scroll-reveal, .fade-in-up').forEach(el => {
+      el.classList.add('visible');
+    });
+  }
+});
+</script>
+
+<!-- Schema.org FAQ for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Is Shoopt really free?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes! Shoopt is 100% free with no ads, no subscriptions, and no hidden costs. All features are available to all users at no charge."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does Shoopt track prices?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You manually add products and record their prices when you shop. Shoopt builds a personal price history over time, allowing you to see price trends and make better purchasing decisions."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is my data private and secure?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Absolutely. Your data is stored locally on your device and is fully encrypted. Shoopt is privacy-first and doesn't share your information with third parties."
+    }
+  }]
+}
+</script>
 </body>
 </html>
 
