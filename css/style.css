@@ -767,7 +767,6 @@ img {
   padding: 6rem 0;
   background: linear-gradient(135deg, var(--amber), var(--orange));
   color: #fff;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -799,32 +798,67 @@ img {
   z-index: 1;
 }
 
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.cta-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
 .cta h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
 }
 
 .cta p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin-bottom: 1.5rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 550px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  margin: 2rem 0;
+}
+
+.btn-large {
+  font-size: 1.15rem;
+  padding: 1rem 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s var(--transition-smooth);
+}
+
+.btn-large:hover .btn-icon {
+  transform: scale(1.1) rotateZ(5deg);
 }
 
 .cta a.btn-primary {
-  margin-top: 1rem;
   background: #fff;
   color: var(--amber);
   font-weight: 700;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .cta a.btn-primary:hover {
   background: rgba(255, 255, 255, 0.95);
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
 .launch-note {
@@ -832,6 +866,138 @@ img {
   font-size: 0.95rem;
   opacity: 0.95;
   animation: float 2s ease-in-out infinite;
+}
+
+/* QR Code Section */
+.cta-qr {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-card {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s var(--transition-smooth),
+              box-shadow 0.4s var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(245, 158, 11, 0.1) 50%, 
+    transparent 70%);
+  animation: qrShine 3s ease-in-out infinite;
+}
+
+@keyframes qrShine {
+  0%, 100% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.qr-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.qr-code-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  padding: 0.5rem;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.qr-code {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 0.5rem;
+  transition: transform 0.3s var(--transition-smooth);
+}
+
+.qr-card:hover .qr-code {
+  transform: scale(1.05);
+}
+
+.qr-text {
+  text-align: center;
+  color: var(--wenge);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.qr-icon {
+  font-size: 1.5rem;
+  animation: phoneWiggle 2s ease-in-out infinite;
+}
+
+@keyframes phoneWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .cta-text {
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+  }
+  
+  .cta p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .qr-card {
+    padding: 1.5rem;
+  }
+  
+  .qr-code-wrapper {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 /* Footer */
