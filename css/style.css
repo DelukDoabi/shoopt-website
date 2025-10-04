@@ -803,12 +803,13 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .cta-text {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 600px;
   text-align: left;
 }
 
@@ -874,6 +875,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 300px;
 }
 
 .qr-card {
@@ -886,6 +888,9 @@ img {
               box-shadow 0.4s var(--transition-smooth);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .qr-card::before {
@@ -920,7 +925,8 @@ img {
   position: relative;
   width: 200px;
   height: 200px;
-  margin: 0 auto 1.5rem;
+  flex-shrink: 0;
+  margin: 0 0 1.5rem 0;
   border-radius: 1rem;
   overflow: hidden;
   background: #fff;
@@ -932,6 +938,7 @@ img {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: contain;
   border-radius: 0.5rem;
   transition: transform 0.3s var(--transition-smooth);
 }
@@ -969,16 +976,35 @@ img {
   }
 }
 
+/* Desktop/Tablet - Force side by side layout */
+@media (min-width: 769px) {
+  .cta-content {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+  }
+  
+  .cta-text {
+    flex: 1 1 auto;
+    max-width: 600px;
+  }
+  
+  .cta-qr {
+    flex: 0 0 300px;
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .cta-content {
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     gap: 3rem;
   }
   
   .cta-text {
     text-align: center;
+    max-width: 100%;
   }
   
   .cta h2 {
@@ -988,6 +1014,11 @@ img {
   .cta p {
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .cta-qr {
+    width: 100%;
+    min-width: auto;
   }
   
   .qr-card {
