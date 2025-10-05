@@ -2,11 +2,48 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Shoopt - تطبيق تتبع الأسعار الذكي</title>
 <meta name="description" content="يساعدك Shoopt على تتبع أسعار المنتجات ومقارنة العروض وتوفير المال. حمّله مجانًا من Google Play!">
   <meta name="theme-color" content="#f59e0b">
 <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* RTL-specific fixes for mobile rendering */
+    html[dir="rtl"] {
+      text-align: right;
+    }
+    html[dir="rtl"] body {
+      direction: rtl;
+      text-align: right;
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+    }
+    html[dir="rtl"] .container {
+      direction: rtl;
+    }
+    html[dir="rtl"] .hero-content {
+      direction: rtl;
+      text-align: right;
+    }
+    html[dir="rtl"] .cta-content {
+      direction: rtl;
+    }
+    /* Force visibility on mobile */
+    @media (max-width: 768px) {
+      html[dir="rtl"] body {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      html[dir="rtl"] .hero,
+      html[dir="rtl"] .features,
+      html[dir="rtl"] .how-it-works,
+      html[dir="rtl"] .cta {
+        display: block !important;
+        visibility: visible !important;
+      }
+    }
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
